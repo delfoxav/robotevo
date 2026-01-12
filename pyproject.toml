@@ -1,0 +1,62 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "robotevo"
+version = "0.1.0"
+description = "A Python library for generating protocols and Freedom EVOware scripts for TECAN Freedom EVO pipetting robots"
+readme = "README.md"
+license = {text = "GPL-3.0"}
+authors = [
+    {name = "Ariel Vina-Rodriguez", email = "arielvina@yahoo.es"}
+]
+maintainers = [
+    {name = "Ariel Vina-Rodriguez", email = "arielvina@yahoo.es"}
+]
+keywords = ["robot", "automation", "liquid-handling", "TECAN", "EVO", "pipetting", "protocol", "laboratory"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+requires-python = ">=3.7"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/qPCR4vir/robotevo"
+Documentation = "https://robotevo.readthedocs.io/en/latest/"
+Repository = "https://github.com/qPCR4vir/robotevo.git"
+"Bug Tracker" = "https://github.com/qPCR4vir/robotevo/issues"
+
+[project.scripts]
+robotevo-gui = "robotevo.EvoScriPy.GUI:main"
+
+[tool.setuptools]
+packages = ["robotevo", "robotevo.EvoScriPy", "robotevo.protocols"]
+
+[tool.setuptools.package-data]
+"robotevo.protocols" = [
+    "evo75_f/*.ewt",
+    "evo75_f/*.cfg",
+    "evo75_f/*.txt",
+    "evo75_f/*.XML",
+    "evo100_f/*.esc",
+    "evo100_f/*.ewt",
+    "evo100_f/*.cfg",
+    "evo100_f/*.txt",
+    "evo100_f/*.XML",
+    "evo200_f/*.ewt",
+    "evo200_f/*.cfg",
+    "evo200_f/*.txt",
+]

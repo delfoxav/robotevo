@@ -96,3 +96,6 @@ EvoScriPy/EvoScript.esc
 EvoScriPy/EvoScript.esc.txt
 EvoScripts/scripts/*.dat
 .idea/
+.venv/
+.github/
+.vscode/

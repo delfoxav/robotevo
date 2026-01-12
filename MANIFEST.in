@@ -1,0 +1,5 @@
+include README.md
+include LICENSE
+recursive-include robotevo/protocols *.ewt *.esc *.cfg *.txt *.XML
+recursive-include docs *
+

@@ -1,0 +1,3 @@
+# Core dependencies
+# Add any required packages here
+# Example: numpy>=1.15.0
