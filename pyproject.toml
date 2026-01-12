@@ -43,20 +43,32 @@ Repository = "https://github.com/qPCR4vir/robotevo.git"
 robotevo-gui = "robotevo.EvoScriPy.GUI:main"
 
 [tool.setuptools]
-packages = ["robotevo", "robotevo.EvoScriPy", "robotevo.protocols"]
+packages = [
+    "robotevo",
+    "robotevo.EvoScriPy",
+    "robotevo.protocols",
+    "robotevo.protocols.evo75_f",
+    "robotevo.protocols.evo100_f",
+    "robotevo.protocols.evo200_f",
+    "robotevo.protocols.demos",
+]
 
 [tool.setuptools.package-data]
 "robotevo.protocols" = [
+    "evo75_f/*.py",
     "evo75_f/*.ewt",
     "evo75_f/*.cfg",
     "evo75_f/*.txt",
     "evo75_f/*.XML",
+    "evo100_f/*.py",
     "evo100_f/*.esc",
     "evo100_f/*.ewt",
     "evo100_f/*.cfg",
     "evo100_f/*.txt",
     "evo100_f/*.XML",
+    "evo200_f/*.py",
     "evo200_f/*.ewt",
     "evo200_f/*.cfg",
     "evo200_f/*.txt",
+    "demos/**/*.py",
 ]
