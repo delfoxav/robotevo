@@ -12,7 +12,7 @@ __author__ = 'qPCR4vir'
 
 import logging
 
-from EvoScriPy.Instruction_Base import *
+from robotevo.EvoScriPy.Instruction_Base import *
 from . import robot
 #todo organize the arg in each instruction according to the more common use
 #todo implement all the instruction, from all the devices, and from script only (not documented-inverse engineering) !!

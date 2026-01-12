@@ -37,7 +37,7 @@ type of "output".
 """
 from pathlib import Path
 import logging
-from EvoScriPy.robot import Robot
+from robotevo.EvoScriPy.robot import Robot
 
 encoding = 'Latin-1'        # ISO/IEC 8859-1
 newline = '\r\n'            # windows newline

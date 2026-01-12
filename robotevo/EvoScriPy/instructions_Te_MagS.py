@@ -10,7 +10,7 @@ __author__ = 'Ariel'
 import logging
 from . import evo_mode
 from . import labware
-from EvoScriPy.Instruction_Base import *
+from robotevo.EvoScriPy.Instruction_Base import *
 
 
 

@@ -19,7 +19,7 @@ import tkinter
 from tkinter.filedialog import askopenfilename
 from pathlib import Path
 
-from protocols.registre_protocols import available
+from robotevo.protocols.registre_protocols import available
 
 
 GUI4parameters = {}  # map { 'protocol class name' : GUI_init_parameters class to use }
