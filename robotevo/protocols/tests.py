@@ -13,14 +13,14 @@ base_dir = Path(__file__).parent.parent
 
 logging.basicConfig(filename=(test_dir / '_tests.log.txt'), filemode='w', level=logging.INFO)
 
-from protocols.demos.hello_world.hello_world import HelloWorld as Prt
+from robotevo.protocols.demos.hello_world.hello_world import HelloWorld as Prt
 
 p = Prt(output_filename=test_dir / 'hello_world_test_')
 logging.info("\n\n************ " + str(p.output_filename.relative_to(base_dir)) + " **************\n")
 p.run()
 
 
-from protocols.evo100_f.Prefill_plates_VEW1_ElutionBuffer_VEW2.Prefill_plates_VEW1_ElutionBuffer_VEW2 import Prefill_plates_VEW1_ElutionBuffer_VEW2 as Prt
+from robotevo.protocols.evo100_f.Prefill_plates_VEW1_ElutionBuffer_VEW2.Prefill_plates_VEW1_ElutionBuffer_VEW2 import Prefill_plates_VEW1_ElutionBuffer_VEW2 as Prt
 
 p = Prt (num_of_samples    = 96,
          output_filename = test_dir / 'Prefill_plates_VEW1_ElutionBuffer_VEW2',
@@ -36,7 +36,7 @@ logging.info("\n\n************ " + str(p.output_filename.relative_to(base_dir)) 
 p.run()
 
 
-from protocols.evo100_f.PreKingFisher_RNAextNucleoMag_EtOH80p.PreKingFisher_RNAextNucleoMag_EtOH80p import PreKingFisher_RNAextNucleoMag_EtOH80p as Prt
+from robotevo.protocols.evo100_f.PreKingFisher_RNAextNucleoMag_EtOH80p.PreKingFisher_RNAextNucleoMag_EtOH80p import PreKingFisher_RNAextNucleoMag_EtOH80p as Prt
 
 p = Prt (num_of_samples    = 96,
          output_filename = test_dir / 'PreKingFisher_RNAextNucleoMag_EtOH80p',
@@ -53,7 +53,7 @@ logging.info("\n\n************ " + str(p.output_filename.relative_to(base_dir)) 
 p.run()
 
 
-from protocols.evo100_f.RNAextractionMN_Mag_Vet.RNAextractionMN_Mag_Vet import RNAextr_MN_Vet_Kit as Prt
+from robotevo.protocols.evo100_f.RNAextractionMN_Mag_Vet.RNAextractionMN_Mag_Vet import RNAextr_MN_Vet_Kit as Prt
 
 p = Prt (num_of_samples    = 48,
          output_filename = test_dir / 'RNAext_MNVet_TeMag',
@@ -136,7 +136,7 @@ logging.info("\n\n************ " + str(p.output_filename.relative_to(base_dir)) 
 p.run()
 
 
-from protocols.demos.demo_two_mixes.demo_two_mixes import DemoTwoMixes as Prt
+from robotevo.protocols.demos.demo_two_mixes.demo_two_mixes import DemoTwoMixes as Prt
 
 p = Prt(num_of_samples  = 4,
         output_filename = test_dir / 'demo-two.mixes',
@@ -147,7 +147,7 @@ logging.info("\n\n************ " + str(p.output_filename.relative_to(base_dir)) 
 p.run()
 
 
-from protocols.demos.tutorial_HL.tutorial_HL import Tutorial_HL as Prt
+from robotevo.protocols.demos.tutorial_HL.tutorial_HL import Tutorial_HL as Prt
 
 p = Prt (num_of_samples              = 6,
          output_filename             = test_dir / 'Tutorial_HLevel',
@@ -166,7 +166,7 @@ logging.info("\n\n************ " + str(p.output_filename.relative_to(base_dir)) 
 p.run()
 
 
-from protocols.demos.tutorial_LL.tutorial_LL import Tutorial_LL as Prt
+from robotevo.protocols.demos.tutorial_LL.tutorial_LL import Tutorial_LL as Prt
 
 p = Prt (num_of_samples              = 6,
          output_filename             = test_dir / 'Tutorial_LLevel_atomic',
@@ -185,7 +185,7 @@ logging.info("\n\n************ " + str(p.output_filename.relative_to(base_dir)) 
 p.run()
 
 
-from protocols.evo100_f.Prefill_plates_LysisBuffer.Prefill_plates_LysisBuffer import Prefill_plates_LysisBuffer as Prt
+from robotevo.protocols.evo100_f.Prefill_plates_LysisBuffer.Prefill_plates_LysisBuffer import Prefill_plates_LysisBuffer as Prt
 
 p = Prt(run_name="_test_1_plate", output_filename = (test_dir / 'Prefill_LysisBuffer'))
 p.use_version('1 plate')
@@ -199,7 +199,7 @@ p.set_first_tip('A01')
 logging.info("\n\n************ " + str(p.output_filename.relative_to(base_dir)) + " **************\n")
 p.run()
 
-from protocols.demos.tutorial_HL_RoMa.tutorial_HL_RoMa import Tutorial_HL_RoMa as Prt
+from robotevo.protocols.demos.tutorial_HL_RoMa.tutorial_HL_RoMa import Tutorial_HL_RoMa as Prt
 
 p = Prt (num_of_samples              = 8,
          output_filename             = test_dir / 'Tutorial_HL_RoMa',
@@ -209,7 +209,7 @@ p.set_first_tip('A01')
 logging.info("\n\n************ " + str(p.output_filename.relative_to(base_dir)) + " **************\n")
 p.run()
 
-from protocols.evo100_f.Prefill_plates_LysisBuffer.Prefill_plates_LysisBuffer_and_ProtKpreMix import Prefill_plates_LysisBuffer_and_ProtKpreMix  as Prt
+from robotevo.protocols.evo100_f.Prefill_plates_LysisBuffer.Prefill_plates_LysisBuffer_and_ProtKpreMix import Prefill_plates_LysisBuffer_and_ProtKpreMix  as Prt
 
 p = Prt(run_name="_test_1_plate", output_filename = (test_dir / 'Prefill_LysisBuffer_pK'))
 p.use_version('1 plate')
